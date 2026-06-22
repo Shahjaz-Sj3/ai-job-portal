@@ -1,21 +1,75 @@
 # HireMind AI Job Portal
 
-AI-powered MERN job portal with candidate, recruiter, and admin workflows.
-
-## Tech Stack
-
-- React, Vite, Tailwind CSS, React Router, Axios
-- Node.js, Express, MongoDB, Mongoose
-- JWT auth, Zod validation, Multer PDF uploads
-- Groq Cloud for resume extraction, job matching, interview questions, and resume suggestions
+An AI-powered full-stack job portal built using the MERN stack that connects job seekers, recruiters, and administrators through an intelligent recruitment platform. The system leverages AI to analyze resumes, recommend suitable jobs, generate interview questions, and provide personalized career guidance.
 
 ## Features
 
-- Candidate registration/login, resume upload, job browsing, applications, tracking, AI match scores, and resume suggestions
-- Recruiter job posting, applicant review, shortlisting/rejection/hiring, listing management, and AI interview questions
-- Admin user/recruiter management and analytics dashboard
+### Candidate Module
 
-## Setup
+* Secure registration and login using JWT authentication
+* Resume upload and profile management
+* Browse and search available job listings
+* Apply for jobs and track application status
+* AI-powered job matching and compatibility scoring
+* AI-generated resume improvement suggestions
+
+### Recruiter Module
+
+* Create, edit, and manage job postings
+* View and manage applicants
+* Shortlist, reject, or hire candidates
+* Access AI-generated interview questions
+* Track recruitment activities through dashboard analytics
+
+### Admin Module
+
+* Manage users and recruiters
+* Monitor platform activity
+* View system analytics and reports
+* Maintain platform integrity and performance
+
+## AI Features
+
+* Resume Parsing and Information Extraction
+* AI-Based Job Recommendation System
+* Resume Improvement Suggestions
+* AI Interview Question Generation
+* Candidate-Job Match Scoring
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+* Mongoose
+
+### Authentication & Security
+
+* JWT Authentication
+* Zod Validation
+
+### AI Integration
+
+* Groq Cloud API
+
+## Screenshots
+
+Add project screenshots here.
+
+## Installation
 
 ```bash
 npm install
@@ -23,25 +77,39 @@ npm install --prefix client
 npm install --prefix server
 ```
 
-Create environment files from the examples:
+Create environment files:
 
-- `client/.env.example` to `client/.env`
-- `server/.env.example` to `server/.env`
+```bash
+client/.env
+server/.env
+```
 
-Set `GROQ_API_KEY` in `server/.env` to enable Phase 2 AI features. You can override the default model with `GROQ_MODEL`.
+Configure required environment variables and start the application.
 
-## Scripts
+## Run Application
 
 ```bash
 npm run dev
-npm run client
-npm run server
-npm run build
-npm run lint
 ```
 
-The default local URLs are:
+Frontend:
+http://localhost:5174
 
-- Client: `http://localhost:5174`
-- API: `http://localhost:5001/api`
-- MongoDB database: `ai_job_portal`
+Backend API:
+http://localhost:5001/api
+
+## Future Enhancements
+
+* Email notifications
+* Real-time chat between recruiters and candidates
+* Video interview integration
+* Advanced AI candidate ranking
+* Resume ATS scoring system
+
+## Author
+
+Shahjaz Saleem
+
+Master of Computer Applications (MCA)
+
+Union Christian College, Aluva
