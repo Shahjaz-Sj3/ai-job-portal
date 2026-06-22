@@ -1,0 +1,22 @@
+{
+  "name": "ai-job-portal",
+  "version": "1.0.0",
+  "description": "AI-powered MERN job portal with resume intelligence and role-based dashboards.",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "lint": "npm run lint --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.5.0"
+  }
+}
